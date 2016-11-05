@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	  <link rel="stylesheet" href="bootstrap.min.css">
+	  <link rel="stylesheet" href="styles.css">
+
+	<title>Adresar</title>
+</head>
+<body>
+<div class="container">
+<h1>Unos podataka</h1>
+<form method="post" action="spremiadresu.php" enctype="multipart/form-data">
+	Ime:<br>
+	<input type="text" name="ime">
+	<br><br>
+	Adresa:<br>
+	<textarea name="adresa"></textarea>
+	<br><br>
+	Grad:<br>
+	<select name="grad">
+		<option>Podgorica</option>
+		<option>Plužine</option>
+		<option>Cetinje</option>
+	</select>
+	<br><br>
+	Email adresa:<br>
+	<input type="text" name="email">
+	<br><br>
+	Pol:<br>
+	<input type="radio" name="pol" value="M">Muški</br>
+	<input type="radio" name="pol" value="Z">Ženski</br>
+	<br><br>
+	Prijatelj:<br>
+	<input type="checkbox" name="prijatelj" checked="checked">
+	<br><br>
+	Slika:<br>
+	<input type="file" name="slika">
+	<br><br>
+	<input type="submit" value="Spremi">
+	<input type="reset" value="Odustani">
+	</div>
+</form>
+</body>
+</html>
